@@ -1,6 +1,11 @@
 #Title : This script scrappes products data from amazon india website where you can search for any items
 #author: Arman Kazmi
 
+'''
+Note: The script return product details only for those items where all fields have values, if any of the fiels is NONE it ingnores that product.
+It can be changed by using try and except for each required field.
+'''
+
 #Importing modules
 from bs4 import BeautifulSoup
 import requests
