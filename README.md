@@ -2,7 +2,7 @@
 
 To scrape the details from [Amazon India](Amazon.in/) follow the steps:
 
-**1. open the terminal in the file location and ```run pip3 install -r requirements.txt```**
+**1. open the terminal in the file location and ```run pip install -r requirements.txt```**
 
 **2. Run ```python amazon_scrap.py```**
 
