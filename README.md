@@ -6,9 +6,9 @@ To scrape the details from [Amazon India](Amazon.in/) follow the steps:
 
 **2. Run ```python amazon_scrap.py```
 
-# Note: Amazon keep changing its HTML layout so it is possible that some product details won't be accessible using this script. Also, making simulatneous requests to same page using same ip might lead to blocking of your ip. To avoid this free proxy servers can be used to make requests. For more refer to the comments in script amazon_scrap.py 
+**Note: Amazon keep changing its HTML layout so it is possible that some product details won't be accessible using this script. Also, making simulatneous requests to same page using same ip might lead to blocking of your ip. To avoid this free proxy servers can be used to make requests. For more refer to the comments in script amazon_scrap.py 
 
-# **One can use the [Amazon-simple-product-api](https://pypi.org/project/python-amazon-simple-product-api/) but one should have valid aws account and amazon associate key to access the product details.
+**One can use the [Amazon-simple-product-api](https://pypi.org/project/python-amazon-simple-product-api/) but one should have valid aws account and amazon associate key to access the product details.
 
 ## **Sample
 
