@@ -134,12 +134,12 @@ def product_data2(soup,count,product_details):
 
 def main(search,no_page):
     #Passing no.of pages and search index to be searched on amazon.in search box
-    url_list = url(search,no_page)
+    ulist = url(search,no_page)
 
     #Fetching the html content of these urls
     contents = []
-    for url in url_list:
-        contents.append(html(url))
+    for link in ulist:
+        contents.append(html(link))
 
     final_data = {}  #creating dictionary of product details where key will be index
     c = 0
