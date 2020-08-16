@@ -12,13 +12,13 @@ To scrape the details from [Amazon India](Amazon.in/) follow the steps:
 
 ## **Sample**
 
-**Input 1 :- **
+**Input 1 :-**
 
 Search :- 'Men stylish shirts'
 
 Number of pages to scrape :- 4
 
-**Json object desplaying first 5 product details**
+**Json object desplaying first 5 product details out of 500+ product details**
 ```{
      "1": {
           "Title": "Men's Slim Fit Shirt",
@@ -63,11 +63,11 @@ Number of pages to scrape :- 4
      .......
 ```
      
-**Input 2 :- **
+**Input 2 :-**
 
 Search :- 'Best smartphones under 15000'
 
-Number of pages to scrape :- 4
+Number of pages to scrape :- 3
 
 **Json object desplaying first 5 product details**
 ```
