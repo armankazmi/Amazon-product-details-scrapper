@@ -12,7 +12,7 @@ To scrape the details from [Amazon India](Amazon.in/) follow the steps:
 
 ## **Sample
 
-**Search :- 'Men stylish shirts'
+** Search :- 'Men stylish shirts'
 
 **Number of pages to scrape :- 4
 
