@@ -22,6 +22,7 @@ def url(search,page):
         url_list.append(url1)
     return url_list
 
+
 '''
     Note: making requests to same page multiple times can lead to blocking of your ip from amazon webpage.
     To avoid this a list of proxies can be used to make request using different ips, or there should be some time gap between making requests to same url.
@@ -45,6 +46,8 @@ def get_free_proxies():
             continue
     return proxies
 '''
+
+
 #Making requests
 def html(url):
     headers = {"User-Agent":
@@ -64,6 +67,7 @@ def html(url):
 
 #Type - 1 of amazon page style (when products are listed horizontal wise)
 #Sample url = https://www.amazon.in/s?k=men+shirts&ref=nb_sb_noss
+
 
 def product_data1(soup,count,product_details):
     links = soup.findAll('div',attrs={'class':'a-section a-spacing-medium a-text-center'})
@@ -99,7 +103,9 @@ def product_data1(soup,count,product_details):
     return product_details,count
 
 
+
 #Type - 2 of amazon page style (when products are listed vertical wise)
+#Sample url : - https://www.amazon.in/s?k=laptops&ref=nb_sb_noss
 def product_data2(soup,count,product_details):
     links = soup.findAll('div',attrs={'class':'s-main-slot s-result-list s-search-results sg-row'})
     l = links[0].findAll('div',attrs={'class':'sg-col-inner'})
@@ -132,6 +138,7 @@ def product_data2(soup,count,product_details):
             continue
     return product_details,count
 
+#Main function which returns json in variable json_object
 def main(search,no_page):
     #Passing no.of pages and search index to be searched on amazon.in search box
     ulist = url(search,no_page)
@@ -159,9 +166,20 @@ def main(search,no_page):
 
     
     
-#Main
+#Search Input 
+'''
+Sample search inputs:-
+    1. men  stylish shirts
+    2. Laptops under 30000
+    3. men sunglasses
+    4. smartphones under 10000
+'''
+
 search = input("Enter the text to be searched : ")
 no_page = input("Enter the no. of Pages to scrape (pages should be greater than 0 and less than 7 : ")
+
+#Since for most of the product listed in horizontal view has max no. of 7 pages so providing a upper limit of 7 pages
+
 if (int(no_page)>0 and int(no_page)<=7):
     main(search,no_page)
 else:
