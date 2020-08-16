@@ -158,11 +158,14 @@ def main(search,no_page):
         else:
             final_data,c = product_data1(soup,c,final_data)
 
-
-    #To convert in Json Format
-    # Serializing json with indent = 5
-    json_object = json.dumps(final_data, indent = 5)   
-    print(json_object)
+            
+    if (not final_data ) == True:
+        print("No informattion available. Try with a different search input.")
+    else:
+        #To convert in Json Format
+        # Serializing json with indent = 5
+        json_object = json.dumps(final_data, indent = 5)   
+        print(json_object)
 
     
     
