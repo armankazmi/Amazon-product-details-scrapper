@@ -162,7 +162,7 @@ def main(search,no_page):
 #Main
 search = input("Enter the text to be searched : ")
 no_page = input("Enter the no. of Pages to scrape (pages should be greater than 0 and less than 7 : ")
-if (no_page>0 and no_page<=7):
+if (int(no_page)>0 and int(no_page)<=7):
     main(search,no_page)
 else:
     print("Try again Page index error")
